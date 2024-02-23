@@ -40,7 +40,7 @@ func ProcessText(s string) (string, int) {
 func CreateMap(filename string) map[int][]string {
 	contents, err := os.ReadFile(filename)
 	if err != nil {
-		log.Fatalln("Could not read the file")
+		log.Fatalln(err)
 	}
 	text := string(contents)
 
