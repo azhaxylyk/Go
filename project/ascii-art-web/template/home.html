@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCII-ART-WEB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #282a36;
+            color: #f8f8f2;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #44475a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header_inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header_title {
+            color: #00bfff;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .input, .banner, .button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px; 
+            border: 1px solid #6272a4; 
+            background-color: #6272a4;
+            color: #f8f8f2;
+            transition: background-color 0.3s;
+        }
+
+        .button {
+            background-color: #50fa7b; 
+            color: #282a36; 
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #6272a4; 
+        }
+
+        .pre-style {
+            background-color: #44475a; 
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <a href="/">
+                <h1 class="header_title">ASCII-ART-WEB</h1>
+            </a>
+        </div>  
+    </header>
+    <main class="main">
+        <div class="content">
+            <form id="asciiForm" action="/ascii-art" method="POST">
+                <div>
+                    <textarea class="input" placeholder="Enter your text here" maxlength="500" autofocus name="text" id="text" style="color:#ddd; background-color:#555;"></textarea>
+                </div>
+                <div class="dropdown">
+                    <select class="banner" id="banners" name="banners" style="color:#ddd; background-color:#555;">
+                        <option value="standard.txt">STANDARD</option>
+                        <option value="shadow.txt">SHADOW</option>
+                        <option value="thinkertoy.txt">THINKERTOY</option>
+                    </select>
+                </div>
+                <div>
+                    <button class="button">PUSH</button>
+                </div>
+            </form>
+            <div class="pre">
+                <pre class="pre-style" style="background-color:#555; color:#ddd;" cols="50" rows="5">{{.Output}}
+                </pre>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
