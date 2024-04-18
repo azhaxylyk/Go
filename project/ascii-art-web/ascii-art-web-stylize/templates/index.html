@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ascii-art-web</title>
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Ascii-art-web</h1>
+    <form action="/ascii-art" method="POST">
+      <label for="text">Your text</label><br>
+      <textarea placeholder="Your text" name="text" id="text"></textarea><br>
+      <ul>
+        <li><label for="standard">style standard</label><input value="standard" name="graphical" id="standard" type="radio" checked /></li>
+        <li><label for="shadow">style shadow</label><input value="shadow" name="graphical" id="shadow" type="radio" /></li>
+        <li><label for="thinkertoy">style thinkertoy</label><input value="thinkertoy" name="graphical" id="thinkertoy" type="radio" /></li>
+      </ul>
+      <input type="button" name = "button" value="Go back!" onclick="history.back()"></input>
+      <input type="submit" name="process" value="Submit" />
+    </form>
+    <div>
+      <text>
+        <pre><div>{{ . }}</div></pre>
+      </text>
+    </div>
+  </div>
+</body>
+
+</html>

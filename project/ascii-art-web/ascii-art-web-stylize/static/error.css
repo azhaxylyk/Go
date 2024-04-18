@@ -1,0 +1,89 @@
+body {
+  background-color: #2e8288;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: PIXY, sans-serif;
+  color: #fff;
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 80%; 
+}
+
+h1 {
+  font-size: 36px;
+}
+
+textarea {
+  width: calc(100% - 40px);
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  resize: none;
+}
+
+input[type="submit"], input[type="button"] {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3c706; 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; 
+}
+
+input[type="button"]:hover {
+  background-color: #f5e509; 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.btn-home {
+  padding: 15px 30px;
+  border-radius: 8px; 
+  background-color: #4CAF50; 
+  color: #ffffff; 
+  font-size: 18px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s; 
+}
+
+.btn-home:hover {
+  background-color: #367c39; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .main {
+      width: 90%; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  textarea {
+      height: 100px; 
+  }
+}
