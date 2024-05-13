@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII Art Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1>ASCII Art Web</h1>
+        <div class="centered">
+            <label for="Stroka">Enter a string:</label>
+            <form method="POST" action="/ascii-art">
+                <textarea type="text" id="Stroka" name="Stroka"></textarea>
+                <label for="banner">Select banner:</label>
+                <select id="banner" name="banner" required>
+                    <option value="standard">Standard</option>
+                    <option value="shadow">Shadow</option>
+                    <option value="thinkertoy">Thinkertoy</option>
+                </select>
+                <br> <button type="submit">Generate ASCII Art</button>
+            </form>
+            <h3>Received string:</h3>
+            <div class="r_string">
+                <pre>{{.PassingString}}</pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
