@@ -3,11 +3,11 @@ package main
 import (
 	"context"
 	"fmt"
-	"groupie-tracker-filters/pkg"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
+	"pkg"
 	"time"
 )
 
