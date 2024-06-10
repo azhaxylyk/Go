@@ -1,8 +1,8 @@
 package main
 
 import (
-	"adel/ascii-art/convert"
-	"adel/function"
+	"Go/project/ascii-art-web/ascii-art-web-dockerize/ascii-art/convert"
+	"Go/project/ascii-art-web/ascii-art-web-dockerize/function"
 	"fmt"
 	"log"
 	"net/http"

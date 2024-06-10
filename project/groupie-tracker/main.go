@@ -1,13 +1,13 @@
 package main
 
 import (
+	"Go/project/groupie-tracker/pkg"
 	"context"
 	"fmt"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
-	"pkg"
 	"time"
 )
 

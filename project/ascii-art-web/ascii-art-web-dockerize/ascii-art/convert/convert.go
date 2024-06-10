@@ -1,8 +1,8 @@
 package convert
 
 import (
-	"adel/ascii-art/check"
-	"adel/ascii-art/container"
+	"Go/project/ascii-art-web/ascii-art-web-dockerize/ascii-art/check"
+	"Go/project/ascii-art-web/ascii-art-web-dockerize/ascii-art/container"
 	"fmt"
 	"os"
 )

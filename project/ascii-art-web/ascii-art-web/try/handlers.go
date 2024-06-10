@@ -1,7 +1,7 @@
 package main
 
 import (
-	ascii "ascii-art-web/ascii"
+	ascii "Go/project/ascii-art-web/ascii-art-web/ascii"
 	"log"
 	"net/http"
 	"strings"

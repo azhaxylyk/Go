@@ -1,7 +1,7 @@
 package implementation
 
 import (
-	"adel/ascii-art/container"
+	"Go/project/ascii-art-web/ascii-art-web-dockerize/ascii-art/container"
 	"errors"
 )
 

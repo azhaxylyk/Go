@@ -1,8 +1,8 @@
 package function
 
 import (
-	"adel/ascii-art/container"
-	"adel/ascii-art/implementation"
+	"Go/project/ascii-art-web/ascii-art-web-dockerize/ascii-art/container"
+	"Go/project/ascii-art-web/ascii-art-web-dockerize/ascii-art/implementation"
 )
 
 func generateAsciiArt(text, banner string) (string, error) {
